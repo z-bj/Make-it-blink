@@ -55,7 +55,7 @@ This code defines an array of six colors, and then creates a new array `coloredS
 
 ## Installation
 
-1.  Clone the repository: `git clone https://github.com/example/example.git`
+1.  Clone the repository: `https://github.com/z-bj/Make-it-blink.git`
 2.  Navigate to the project directory: `cd example`
 3.  Install the dependencies: `npm install`
 4.  Run the application: `npm start`
