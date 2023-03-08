@@ -1,10 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Raleway:wght@400;500;600;700&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Raleway:wght@400;500;600;700&display=swap');
-
-/* Mobile-first styles */
+:root {
+  --card-width: 190px;
+  --card-height: 254px;
+  --border-radius: 8px;
+  --red: #ff605c;
+  --yellow: #ffbd44;
+  --green: #00ca4e;
+}
 
 html {
   font-size: 16px;
+}
+
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  html {
+    font-size: 20px;
+  }
 }
 
 body {
@@ -27,11 +45,7 @@ body {
   padding: 1rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1, h2, h3, h4, h5 {
   margin: 3rem 0 1.38rem;
   font-family: 'Permanent Marker', cursive;
   font-weight: 400;
@@ -39,36 +53,14 @@ h5 {
   text-align: center;
 }
 
-h1 {
-  margin-top: 0;
-  font-size: 4rem;
-}
+h1 { font-size: 4rem; margin-top: 0; }
+h2 { font-size: 3rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
 
-h2 {
-  font-size: 3rem;
-}
-
-h3 {
-  font-size: 2rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-}
-
-p {
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-small,
-.text_small {
-  font-size: 0.667rem;
-}
+p { margin-bottom: 1rem; text-align: center; }
+small, .text_small { font-size: 0.667rem; }
 
 input[type='text'] {
   font-family: 'Permanent Marker', cursive;
@@ -81,51 +73,14 @@ input[type='text'] {
   max-width: 400px;
 }
 
-h3 span {
-  color: orangered;
-}
-
-/* Media queries */
-
-@media only screen and (min-width: 600px) {
-  html {
-    font-size: 18px;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  html {
-    font-size: 20px;
-  }
-
-  h1 {
-    font-size: 7.594rem;
-  }
-
-  h2 {
-    font-size: 5.063rem;
-  }
-
-  h3 {
-    font-size: 3.375rem;
-  }
-
-  h4 {
-    font-size: 2.25rem;
-  }
-
-  h5 {
-    font-size: 1.5rem;
-  }
-}
-
+h3 span { color: orangered; }
 
 .card {
   width: 130%;
   height: 130%;
   margin: 0 auto;
   background-color: #F8FBFE;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   z-index: 1;
 }
 
@@ -148,17 +103,9 @@ h3 span {
   border-radius: 50%;
 }
 
-.red {
-  background-color: #ff605c;
-}
-
-.yellow {
-  background-color: #ffbd44;
-}
-
-.green {
-  background-color: #00ca4e;
-}
+.red { background-color: var(--red); }
+.yellow { background-color: var(--yellow); }
+.green { background-color: var(--green); }
 
 #center {
   display: flex;
