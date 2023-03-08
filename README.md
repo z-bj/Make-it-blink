@@ -1,5 +1,7 @@
 # Make it blink!
 
+![banner]()
+
 ![React](https://img.shields.io/badge/React-17.0.2-blue?logo=React) ![CSS3](https://img.shields.io/badge/CSS3-3.0.0-blue?logo=CSS3) ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?logo=JavaScript)
 
 "Make it blink!" is a React Text Blinker application that blinks the text input by the user. The color of each letter of the input text changes every 150ms in a looping manner. The color sequence is `red`, `green`, `blue`, `cyan`, `magenta`, and `black`.
