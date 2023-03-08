@@ -7,6 +7,7 @@
   --red: #ff605c;
   --yellow: #ffbd44;
   --green: #00ca4e;
+  --orangered: orangered
 }
 
 html {
@@ -106,8 +107,8 @@ input[type='text'] {
   max-width: 400px;
 }
 
-h2 span {
-  color: orangered;
+h3 span {
+  color: var(--orangered);
 }
 
 .card {
@@ -168,4 +169,6 @@ h2 span {
 img {
   width: 55%;
   margin: 0 auto;
+box-shadow: rgb(77, 54, 38) 0px 20px 30px -10px;
+
 }

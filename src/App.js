@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
-import backgroundImg from "./img/ART_RGB_CMYK_PANTONE-transformed.webp";
+import backgroundImg from "./img/ART_RGB_CMYK_PANTONE-croped.webp";
 
 function App() {
   const [inputValue, setInputValue] = useState("");
@@ -38,13 +38,11 @@ function App() {
       <div class="card__content">
         <div id="center">
           <div>
-            <h2>
-              YOU KNOW<span>...</span>
-            </h2>
+            <h2>You know...</h2>
             <div>
               <img src={backgroundImg} alt="background image" id="center" />
               <h3>
-                So, blink that text<span>!</span> 🚨
+                So, blink that text <span>!</span>
               </h3>
               <input
                 type="text"
@@ -53,7 +51,6 @@ function App() {
                 placeholder="Enter text here..."
                 id="center"
               />
-              {/* <hr /> */}
               <h2>{coloredString}</h2>
             </div>
           </div>
