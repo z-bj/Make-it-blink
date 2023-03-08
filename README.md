@@ -1,4 +1,4 @@
-# Make it blink
+# Make it blink!
 
 ![React](https://img.shields.io/badge/React-17.0.2-blue?logo=React) ![CSS3](https://img.shields.io/badge/CSS3-3.0.0-blue?logo=CSS3) ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?logo=JavaScript)
 
