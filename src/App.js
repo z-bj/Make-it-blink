@@ -23,7 +23,24 @@ function App() {
   ));
 
   return (
-    <div id="center">
+
+
+
+
+<div class="card">
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
+  <div class="card__content">
+  <div id="center">
       <div>
         <h3>Make it Blink<span> !</span></h3>
         <div>
@@ -40,6 +57,22 @@ function App() {
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
   );
 }
 
