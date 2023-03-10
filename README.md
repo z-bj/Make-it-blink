@@ -19,7 +19,13 @@ To implement the blinking effect, the app uses `setInterval` to update the color
 
 ``` javascript
 
-useEffect(() => { const intervalId = setInterval(() => { setColorIndex((prevColorIndex) => (prevColorIndex + 1) % 6); }, blinkSpeed); return () => clearInterval(intervalId); }, [blinkSpeed]);
+useEffect(() => { const intervalId = setInterval(() => { 
+
+ setColorIndex((prevColorIndex) => (prevColorIndex + 1) % 6); }, blinkSpeed);
+   return () => clearInterval(intervalId);
+ }
+, [blinkSpeed]
+);
 ```
 
 This code sets up an **effect** to run after the component has rendered using the `useEffect` hook. It creates an interval using `setInterval`, which will run the callback function every `blinkSpeed` milliseconds. Inside the callback, the `setColorIndex` function is called with a callback that increments the `colorIndex` state variable by 1 and then takes the remainder when divided by 6. This creates a cycling effect through an array of six colors. Finally, the interval is cleared when the component is unmounted using `clearInterval`. The `useEffect` hook takes the `blinkSpeed` state variable as a dependency, which means that the effect will be re-run if `blinkSpeed` changes
@@ -29,7 +35,11 @@ This code sets up an **effect** to run after the component has rendered using th
 ``` javascript
 
 const coloredString = inputValue.split("").map((char, index) => (
-<span key={index} style={{ color: colors[(index + colorIndex) % 6] }}> {char} </span> ));
+
+<span key={index} style={{ color: colors[(index + colorIndex) % 6] }}> {char} </span>
+
+));
+
 ```
 
 
@@ -110,7 +120,7 @@ The font family and font sizes are defined using **Google Fonts** and [**TypeSc
 
 To run this app on your local machine:
 
-1.  Clone the repository using `git clone https://github.com/z-bj/blinking-text-app.git`.
+1.  Clone the repository using `git clone https://github.com/z-bj/Make-it-blink.git`.
 2.  Navigate to the project directory using `cd Make-it-blink.
 3.  Install the dependencies using `npm install`.
 4.  Start the development server using `npm start`.
