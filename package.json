@@ -1,8 +1,8 @@
 {
+  "homepage": "z-bj.github.io/Make-it-blink/",
   "name": "temp-workspace",
   "version": "0.0.0",
   "license": "MIT",
-  "homepage": "z-bj.github.io/Make-it-blink/",
   "scripts": {
     "start": "nx exec -- vite",
     "predeploy": "npm run build",
