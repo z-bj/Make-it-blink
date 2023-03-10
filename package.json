@@ -1,12 +1,9 @@
 {
-  "homepage": "z-bj.github.io/Make-it-blink/",
   "name": "temp-workspace",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "start": "nx exec -- vite",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "serve": "nx exec -- vite",
     "build": "nx exec -- vite build",
     "test": "nx exec -- vitest"
@@ -42,7 +39,6 @@
     "eslint-plugin-jsx-a11y": "6.7.1",
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-react-hooks": "4.6.0",
-    "gh-pages": "^5.0.0",
     "jest-watch-typeahead": "^2.2.2",
     "jsdom": "~20.0.3",
     "nx": "15.8.5",
