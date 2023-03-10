@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
-import "./index.css";
-import backgroundImg from "./img/ART_RGB_CMYK_PANTONE-croped.webp";
+import React, { useState, useEffect } from 'react';
+import './index.css';
+import backgroundImg from './img/ART_RGB_CMYK_PANTONE-croped.webp';
 
 function App() {
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState('');
   const [colorIndex, setColorIndex] = useState(0);
-  const [blinkSpeed, setBlinkSpeed] = useState(150);
+  const [blinkSpeed, setBlinkSpeed] = useState(50);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -16,15 +16,15 @@ function App() {
   }, [blinkSpeed]);
 
   const colors = [
-    "#333333",
-    "#666666",
-    "#999999",
-    "#FFA500",
-    "#FFA07A",
-    "#FF8C00",
+    '#333333',
+    '#666666',
+    '#999999',
+    '#FFA500',
+    '#FFA07A',
+    '#FF8C00',
   ];
 
-  const coloredString = inputValue.split("").map((char, index) => (
+  const coloredString = inputValue.split('').map((char, index) => (
     <span key={index} style={{ color: colors[(index + colorIndex) % 6] }}>
       {char}
     </span>
@@ -62,8 +62,8 @@ function App() {
 
               <input
                 type="range"
-                min="10"
-                max="500"
+                min="0"
+                max="1000"
                 step="10"
                 value={blinkSpeed}
                 onChange={(e) => setBlinkSpeed(parseInt(e.target.value))}
@@ -74,7 +74,7 @@ function App() {
 
               <output id="range">{blinkSpeed}/ms</output>
               <hr />
-              <h4>{coloredString}</h4>
+              <h3>{coloredString}</h3>
             </div>
           </div>
         </div>

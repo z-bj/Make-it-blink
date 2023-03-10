@@ -98,6 +98,7 @@ small,
 
 input[type='text'] {
   font-family: 'Permanent Marker', cursive;
+  font-size: 1rem;
   background-color: #efefef;
   border: none;
   margin: 0 auto !important;
