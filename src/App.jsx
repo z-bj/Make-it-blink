@@ -5,16 +5,24 @@ import backgroundImg from "./img/ART_RGB_CMYK_PANTONE-croped.webp";
 function App() {
   const [inputValue, setInputValue] = useState("");
   const [colorIndex, setColorIndex] = useState(0);
+  const [blinkSpeed, setBlinkSpeed] = useState(150);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setColorIndex((prevColorIndex) => (prevColorIndex + 1) % 6);
-    }, 150);
+    }, blinkSpeed);
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [blinkSpeed]);
 
-  const colors = ["red", "green", "blue", "cyan", "magenta", "black"];
+  const colors = [
+    "#333333",
+    "#666666",
+    "#999999",
+    "#FFA500",
+    "#FFA07A",
+    "#FF8C00",
+  ];
 
   const coloredString = inputValue.split("").map((char, index) => (
     <span key={index} style={{ color: colors[(index + colorIndex) % 6] }}>
@@ -38,11 +46,11 @@ function App() {
       <div class="card__content">
         <div id="center">
           <div>
-            <h2>You know...</h2>
+            <h2 className="title">You know...</h2>
             <div>
               <img src={backgroundImg} alt="background image" id="center" />
               <h3>
-                So, blink that text <span>!</span>
+                So, make it blink <span>!</span>
               </h3>
               <input
                 type="text"
@@ -51,7 +59,22 @@ function App() {
                 placeholder="Enter text here..."
                 id="center"
               />
-              <h2>{coloredString}</h2>
+
+              <input
+                type="range"
+                min="10"
+                max="500"
+                step="10"
+                value={blinkSpeed}
+                onChange={(e) => setBlinkSpeed(parseInt(e.target.value))}
+                id="blinkSpeed"
+                oninput="rangevalue.value=value"
+              />
+              <br />
+
+              <output id="range">{blinkSpeed}/ms</output>
+              <hr />
+              <h4>{coloredString}</h4>
             </div>
           </div>
         </div>
