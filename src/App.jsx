@@ -31,19 +31,19 @@ function App() {
   ));
 
   return (
-    <div class="card">
-      <div class="tools">
-        <div class="circle">
-          <span class="red box"></span>
+    <div className="card">
+      <div className="tools">
+        <div className="circle">
+          <span className="red box"></span>
         </div>
-        <div class="circle">
-          <span class="yellow box"></span>
+        <div className="circle">
+          <span className="yellow box"></span>
         </div>
-        <div class="circle">
-          <span class="green box"></span>
+        <div className="circle">
+          <span className="green box"></span>
         </div>
       </div>
-      <div class="card__content">
+      <div className="card__content">
         <div id="center">
           <div>
             <h2 className="title">You know...</h2>
