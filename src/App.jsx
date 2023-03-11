@@ -1,6 +1,9 @@
+import './App.css'
+
+
 import React, { useState, useEffect } from 'react';
-import './index.css';
-import backgroundImg from './img/ART_RGB_CMYK_PANTONE-croped.webp';
+
+import backgroundImg from './assets/ART_RGB_CMYK_PANTONE-croped.webp';
 
 function App() {
   const [inputValue, setInputValue] = useState('');
