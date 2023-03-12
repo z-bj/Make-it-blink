@@ -37,7 +37,11 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+<<<<<<< HEAD
   padding: 2rem;
+=======
+  padding: 10rem 2rem;
+>>>>>>> c81b3f4019c98e87880c62840f5f6bb1b73d7cb4
 }
 
 .container {
@@ -65,11 +69,19 @@ h1 {
 }
 
 h2 {
+<<<<<<< HEAD
   font-size: 12vw;
 }
 
 h3 {
   font-size: 9vw;
+=======
+  font-size: 10vw;
+}
+
+h3 {
+  font-size: 6vw;
+>>>>>>> c81b3f4019c98e87880c62840f5f6bb1b73d7cb4
   padding: 0 2rem;
 }
 
