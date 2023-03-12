@@ -1,7 +1,3 @@
-
-
-
-
 ![Demo](https://github.com/z-bj/Make-it-blink/blob/main/Make-it-Blink.gif)
 
 # Make-it-blink
