@@ -1,8 +1,5 @@
-import './App.css'
-
-
 import React, { useState, useEffect } from 'react';
-
+import './App.css'
 import backgroundImg from './assets/ART_RGB_CMYK_PANTONE-croped.webp';
 
 function App() {
